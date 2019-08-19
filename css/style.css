@@ -1,13 +1,14 @@
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
-body{
+
+body {
   font: 1rem 'Montserrat', sans-serif;
   letter-spacing: 1px;
   background: #fff;
@@ -15,24 +16,25 @@ body{
   color: #292b2c;
 }
 
-h1,h2,h3,h4,h5,p{cursor: default;}
+h1, h2, h3, h4, h5, p {
+  cursor: default;
+}
 
-h1.stylise{
+h1.stylise {
   font: 3.5rem 'Kaushan Script', cursive;
 }
 
 /* Clearfix */
-
-.clearfix::after, .clearfix::before{
+.clearfix::after, .clearfix::before {
   content: '';
   display: block;
 }
 
-.clearfix::after{
+.clearfix::after {
   clear: both;
 }
 
-header{
+header {
   width: 100%;
   height: 60px;
   position: absolute;
@@ -41,6 +43,7 @@ header{
   box-sizing: border-box;
   line-height: 60px;
 }
+
 /*
 header::after{
   content: "";
@@ -50,7 +53,6 @@ header::after{
   height: 3px;
   background: red;
 } */
-
 .letter {
   margin: 0 10px;
 }
@@ -61,8 +63,7 @@ header::after{
 }
 
 /* Head Nav bar */
-
-.brand{
+.brand {
   font-size: 2rem;
   font-weight: bolder;
   color: #292b2c;
@@ -71,7 +72,7 @@ header::after{
   border-left: 5px solid royalblue;
 }
 
-.brand::before{
+.brand::before {
   content: '';
   position: absolute;
   bottom: -8px;
@@ -84,14 +85,23 @@ header::after{
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
+}
 
-}
 @keyframes changeColor {
-  0%{  background-color: royalblue;}
-  50% {  background-color: #F3CBC3}
-  100%{  background-color: #292b2c;}
+  0% {
+    background-color: royalblue;
+  }
+
+  50% {
+    background-color: #F3CBC3
+  }
+
+  100% {
+    background-color: #292b2c;
+  }
 }
-.brand::after{
+
+.brand::after {
   content: '';
   position: absolute;
   bottom: -3px;
@@ -101,21 +111,21 @@ header::after{
   background-color: royalblue;
 }
 
-.left{
+.left {
   float: left;
 }
 
-.right{
+.right {
   float: right;
 }
 
-nav.right > ul{
+nav.right>ul {
   list-style: none;
   margin: 5px 90px 0 0;
   padding: 0;
 }
 
-nav.right > ul li{
+nav.right>ul li {
   display: inline-block;
   margin-left: 20px;
   padding: 0px 10px;
@@ -124,19 +134,19 @@ nav.right > ul li{
   cursor: pointer;
 }
 
-.head-nav-icons{
+.head-nav-icons {
   width: 25px;
   height: 25px;
   color: #292b2c;
   transition: .4s;
 }
-.head-nav-icons:hover{
+
+.head-nav-icons:hover {
   color: red;
 }
 
 /* Menu */
-
-.menu-container{
+.menu-container {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -145,14 +155,14 @@ nav.right > ul li{
   display: none;
 }
 
-article.promo{
+article.promo {
   width: 100%;
   height: 100vh;
   background: url('../img/balloon-girl.jpg') center/cover no-repeat;
   position: relative;
 }
 
-.section-brief{
+.section-brief {
   position: relative;
   left: 10em;
   top: 200px;
@@ -165,7 +175,7 @@ article.promo{
   z-index: 2;
 }
 
-.section-brief p{
+.section-brief p {
   font-size: 0.8rem;
   font-weight: bolder;
   letter-spacing: 0.6em;
@@ -174,7 +184,7 @@ article.promo{
   text-indent: 1.1rem;
 }
 
-.section-brief > h1{
+.section-brief>h1 {
   font: bold 5rem 'Kaushan Script', cursive;
   color: #fff;
   z-index: 1;
@@ -182,11 +192,11 @@ article.promo{
   text-shadow: 3px 3px 0 #9B487C, 4px 4px 0 #9B487C, 5px 5px 0 #9B487C;
 }
 
-.section-brief button{
+.section-brief button {
   margin-top: 4rem;
 }
 
-#close-btn{
+#close-btn {
   position: absolute;
   right: 40px;
   top: 20px;
@@ -194,8 +204,7 @@ article.promo{
 }
 
 /* Second container */
-
-.ladies-container{
+.ladies-container {
   width: 80%;
   margin: 100px auto;
   height: auto;
@@ -204,7 +213,7 @@ article.promo{
   flex-wrap: wrap;
 }
 
-.shop-box{
+.shop-box {
   flex: 0 0 350px;
   min-width: 300px;
   text-align: center;
@@ -213,15 +222,15 @@ article.promo{
   justify-content: center;
 }
 
-.for-her-margin{
-    margin-right: 70px;
+.for-her-margin {
+  margin-right: 70px;
 }
 
-.for-him-margin{
-    margin-left: 70px;
+.for-him-margin {
+  margin-left: 70px;
 }
 
-.fashion-shop-card{
+.fashion-shop-card {
   margin-top: 3.5rem;
   position: relative;
   height: 420px;
@@ -231,36 +240,36 @@ article.promo{
   overflow: hidden;
 }
 
-.fashion-shop-card::before{
+.fashion-shop-card::before {
   content: '';
   position: absolute;
   top: -130px;
   left: -300px;
   width: 170%;
   height: 20%;
-  background: rgba(255,255,255,0.4);
-  transform: rotate(-35deg) ;
+  background: rgba(255, 255, 255, 0.4);
+  transform: rotate(-35deg);
   transition: .4s;
 }
 
-.fashion-shop-card:hover::before{
-    top: 480px;
-    left: 0px;
+.fashion-shop-card:hover::before {
+  top: 480px;
+  left: 0px;
 }
 
-.fashion-shop-card:hover{
+.fashion-shop-card:hover {
   background-size: 110% 110%;
 }
 
-.for-her{
+.for-her {
   background-image: url('../img/banner-01.jpg');
 }
 
-.for-him{
+.for-him {
   background-image: url('../img/banner-02.jpg');
 }
 
-.card-btn{
+.card-btn {
   position: absolute;
   bottom: 50px;
   left: 50%;
@@ -268,29 +277,29 @@ article.promo{
   font-size: 0.9rem
 }
 
-.ladies-fashion-nav{
+.ladies-fashion-nav {
   width: 500px;
   margin-bottom: 40px;
 }
 
-.ladies-fashion-nav ul{
+.ladies-fashion-nav ul {
   width: 100%;
   list-style: none;
- display: inline-flex;
- justify-content: space-between;
+  display: inline-flex;
+  justify-content: space-between;
 }
 
-.ladies-fashion-nav ul li{
+.ladies-fashion-nav ul li {
   position: relative;
   text-transform: uppercase;
   font-size: 0.9rem;
   font-weight: bolder;
-  color: rgba(0,0,0,0.5);
+  color: rgba(0, 0, 0, 0.5);
   transition: all ease 0.4s;
   cursor: pointer;
 }
 
-.ladies-fashion-nav ul li::before{
+.ladies-fashion-nav ul li::before {
   content: '';
   position: absolute;
   bottom: -2px;
@@ -303,29 +312,32 @@ article.promo{
   transition: all ease 0.4s;
 }
 
-.ladies-fashion-nav ul li:hover{
-    color: rgba(0,0,0,1);
+.ladies-fashion-nav ul li:hover {
+  color: rgba(0, 0, 0, 1);
 }
 
-.ladies-fashion-nav ul li:hover::before{
+.ladies-fashion-nav ul li:hover::before {
   transform: scaleX(1);
 }
 
 /* For active nav-link */
-.ladies-fashion-nav ul li:first-child{
-  color: rgba(0,0,0,1);
+.ladies-fashion-nav ul li:first-child {
+  color: rgba(0, 0, 0, 1);
 }
-.ladies-fashion-nav ul li:first-child::before{
+
+.ladies-fashion-nav ul li:first-child::before {
   transform: scaleX(1);
 }
-.ladies-other-grid{
+
+.ladies-other-grid {
   display: flex;
   justify-content: space-between;
   align-content: space-between;
   flex-wrap: wrap;
   width: 720px;
 }
-.ladies-other-grid > div{
+
+.ladies-other-grid>div {
   width: 220px;
   height: 320px;
   margin: 10px 0;
@@ -338,8 +350,7 @@ article.promo{
 }
 
 /* CARDs WOMEN */
-
-.card-img{
+.card-img {
   width: 220px;
   height: 260px;
   background: center/cover;
@@ -349,73 +360,76 @@ article.promo{
   overflow: hidden;
 }
 
-.product-1{
+.product-1 {
   background-image: url('../img/product-1a.jpg');
 }
 
-.ladies-card:hover .product-1{
+.ladies-card:hover .product-1 {
   background-image: url('../img/product-1b.jpg');
 }
 
-.product-2{
+.product-2 {
   background-image: url('../img/product-2a.jpg');
 }
 
-.ladies-card:hover .product-2{
+.ladies-card:hover .product-2 {
   background-image: url('../img/product-2b.jpg');
 }
 
-.product-3{
+.product-3 {
   background-image: url('../img/product-3a.jpg');
 }
 
-.ladies-card:hover .product-3{
+.ladies-card:hover .product-3 {
   background-image: url('../img/product-3b.jpg');
 }
 
-.product-4{
+.product-4 {
   background-image: url('../img/product-4a.jpg');
 }
 
-.ladies-card:hover .product-4{
+.ladies-card:hover .product-4 {
   background-image: url('../img/product-4b.jpg');
 }
 
-.product-5{
+.product-5 {
   background-image: url('../img/product-5a.jpg');
 }
 
-.ladies-card:hover .product-5{
+.ladies-card:hover .product-5 {
   background-image: url('../img/product-5b.jpg');
 }
 
-.product-6{
+.product-6 {
   background-image: url('../img/product-6a.jpg');
 }
 
-.ladies-card:hover .product-6{
+.ladies-card:hover .product-6 {
   background-image: url('../img/product-6b.jpg');
 }
 
 /* Shop-Icons */
-ion-icon[name="heart-empty"]{
+ion-icon[name="heart-empty"] {
   position: absolute;
   right: 10px;
   top: 10px;
   color: #292b2c;
   font-size: 1.3rem;
 }
-ion-icon[name="heart-empty"]:hover{
+
+ion-icon[name="heart-empty"]:hover {
   color: red;
 }
-.shop-icon-wrapper{
+
+.shop-icon-wrapper {
   position: absolute;
   bottom: -40px;
   left: 50%;
   width: 100%;
   transform: translateX(-50%);
 }
-.shop-icons{
+
+.shop-icons {
   font-size: 1.3rem;
   padding: 7px;
   color: #fff;
@@ -426,32 +440,34 @@ ion-icon[name="heart-empty"]:hover{
   margin: 0 10px;
   opacity: 0.8;
 }
-.shop-icons:hover{
+
+.shop-icons:hover {
   opacity: 1;
 }
-.card-img:hover .shop-icons:first-child{
+
+.card-img:hover .shop-icons:first-child {
   transform: translateY(-50px);
 }
-.card-img:hover .shop-icons:nth-child(2){
+
+.card-img:hover .shop-icons:nth-child(2) {
   transition-delay: 0.2s;
   transform: translateY(-50px);
 }
-.card-img:hover .shop-icons:nth-child(3){
+
+.card-img:hover .shop-icons:nth-child(3) {
   transition-delay: 0.4s;
   transform: translateY(-50px);
 }
 
-
 /* New Article Promo */
-
-.new-arrival-promo{
+.new-arrival-promo {
   margin: 0 auto;
   width: 85%;
   height: 400px;
   background: url('../img/background-02.jpg') center/cover no-repeat;
 }
 
-.new-arrival-left{
+.new-arrival-left {
   width: 400px;
   text-align: center;
   line-height: 4rem;
@@ -460,7 +476,7 @@ ion-icon[name="heart-empty"]:hover{
   left: 30px;
 }
 
-.new-arrival-title{
+.new-arrival-title {
   background-color: #292b2c;
   color: #fff;
   display: inline-block;
@@ -468,66 +484,76 @@ ion-icon[name="heart-empty"]:hover{
   box-sizing: content-box;
 }
 
-.new-arrival-promo p{
+.new-arrival-promo p {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   font-size: 0.7rem;
   font-weight: bolder;
 }
 
-.new-arrival-promo a{
-  color:  #292b2c;
+.new-arrival-promo a {
+  color: #292b2c;
   font-weight: bold;
 }
 
 /* CARD MEN */
-.product-7{
+.product-7 {
   background-image: url('../img/product-7a.jpg');
 }
-.product-8{
+
+.product-8 {
   background-image: url('../img/product-8a.jpg');
 }
-.product-9{
+
+.product-9 {
   background-image: url('../img/product-9a.jpg');
 }
-.product-10{
+
+.product-10 {
   background-image: url('../img/product-10a.jpg');
 }
-.product-11{
+
+.product-11 {
   background-image: url('../img/product-11a.jpg');
 }
-.product-12{
+
+.product-12 {
   background-image: url('../img/product-12a.jpg');
 }
-.ladies-card:hover .product-7{
+
+.ladies-card:hover .product-7 {
   background-image: url('../img/product-7b.jpg');
 }
-.ladies-card:hover .product-8{
+
+.ladies-card:hover .product-8 {
   background-image: url('../img/product-8b.jpg');
 }
-.ladies-card:hover .product-9{
+
+.ladies-card:hover .product-9 {
   background-image: url('../img/product-9b.jpg');
 }
-.ladies-card:hover .product-10{
+
+.ladies-card:hover .product-10 {
   background-image: url('../img/product-10b.jpg');
 }
-.ladies-card:hover .product-11{
+
+.ladies-card:hover .product-11 {
   background-image: url('../img/product-11b.jpg');
 }
-.ladies-card:hover .product-12{
+
+.ladies-card:hover .product-12 {
   background-image: url('../img/product-12b.jpg');
 }
 
 /* SALE */
-
-.sale-wrapper{
+.sale-wrapper {
   width: 85%;
   height: 300px;
   margin: 0 auto;
   position: relative;
 }
 
-.sale-wrapper > div:nth-child(odd){
+.sale-wrapper>div:nth-child(odd) {
   float: left;
   width: 50%;
   height: 100%;
@@ -537,16 +563,16 @@ ion-icon[name="heart-empty"]:hover{
   overflow: hidden;
 }
 
-.woman-panel{
+.woman-panel {
   background: url('../img/man-shoes-show.png') center/100% 100% no-repeat;
 }
 
-.woman-panel:hover{
+.woman-panel:hover {
   filter: hue-rotate(45deg);
   background-size: 110% 110%
 }
 
-.woman-text,.man-text{
+.woman-text, .man-text {
   display: block;
   font-size: 1.5rem;
   font-weight: bolder;
@@ -554,7 +580,7 @@ ion-icon[name="heart-empty"]:hover{
   letter-spacing: 1rem;
 }
 
-.woman-text::before{
+.woman-text::before {
   content: '';
   position: absolute;
   top: 13px;
@@ -564,19 +590,19 @@ ion-icon[name="heart-empty"]:hover{
   background: #292b2c;
 }
 
-.woman-text{
+.woman-text {
   position: absolute;
   top: 9rem;
   left: -3.5rem;
   transform: rotate(90deg);
 }
 
-.mid-panel{
+.mid-panel {
   width: 300px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   box-sizing: content-box;
   padding: 2rem 1rem;
   background-color: #eee;
@@ -589,43 +615,46 @@ ion-icon[name="heart-empty"]:hover{
   cursor: default;
 }
 
-.mid-panel::before{
+.mid-panel::before {
   content: '';
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: -1;
   border: 1px solid #eee;
   animation: border-fade 1.5s ease-in-out infinite alternate;
 }
 
 @keyframes border-fade {
-  0%{width: 100%;
+  0% {
+    width: 100%;
     height: 100%;
     border: 1px solid #eee;
     opacity: 0;
   }
-  100%{width: 110%;
+
+  100% {
+    width: 110%;
     height: 120%;
     border: 3px solid #eee;
     opacity: 1;
   }
 }
 
-.mid-panel span{
+.mid-panel span {
   font-size: 0.8rem;
 }
 
-.man-panel{
+.man-panel {
   background: url('../img/retro-look-man.png') top/cover no-repeat;
 }
 
-.man-panel:hover{
+.man-panel:hover {
   filter: hue-rotate(45deg);
 }
 
-.man-text{
+.man-text {
   position: absolute;
   bottom: 4.5rem;
   right: -1.65rem;
@@ -633,8 +662,7 @@ ion-icon[name="heart-empty"]:hover{
 }
 
 /* Partner */
-
-.partner-container{
+.partner-container {
   margin: 50px auto;
   width: 80%;
   height: auto;
@@ -642,47 +670,52 @@ ion-icon[name="heart-empty"]:hover{
   justify-content: space-between;
 }
 
-.partner-container > img{
+.partner-container>img {
   opacity: 0.5;
   cursor: pointer;
   transition: .6s;
 }
 
-.partner-container > img:hover{
+.partner-container>img:hover {
   opacity: 1;
 }
 
 /* Footer */
-
-footer{
+footer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   padding-top: 100px;
   padding-bottom: 100px;
   box-sizing: content-box;
-  background-color: rgba(0,0,0,0.03);
+  background-color: rgba(0, 0, 0, 0.03);
 }
-.footer-brand{
+
+.footer-brand {
   font-size: 4rem;
   margin: 0 0 30px -5px;
 }
-footer .copyright{
-    cursor: default;
-    font-weight: bolder;
-    color: #aaa;
+
+footer .copyright {
+  cursor: default;
+  font-weight: bolder;
+  color: #aaa;
 }
-footer h2{
+
+footer h2 {
   margin-bottom: 30px;
 }
-footer h5{
-  color: rgba(0,0,0,0.6);
+
+footer h5 {
+  color: rgba(0, 0, 0, 0.6);
   margin-bottom: 10px;
 }
-footer ul{
+
+footer ul {
   list-style: none;
 }
-footer ul li{
+
+footer ul li {
   margin: 15px auto;
   font-size: 0.9rem;
   font-weight: bolder;
@@ -690,29 +723,31 @@ footer ul li{
   cursor: pointer;
   transition: .4s;
 }
-footer ul li:hover{
+
+footer ul li:hover {
   color: #000;
   text-decoration: underline;
 }
 
-.social-icons{
+.social-icons {
   position: relative;
   top: 40px;
   cursor: default;
 }
-.social-icons > ion-icon{
+
+.social-icons>ion-icon {
   margin-left: 20px;
   opacity: 0.7;
   transition: .4s;
   cursor: pointer;
 }
-.social-icons > ion-icon:hover{
+
+.social-icons>ion-icon:hover {
   opacity: 1;
 }
 
 /* BUTTONS */
-
-button{
+button {
   cursor: pointer;
   font-size: 0.8rem;
   outline: none;
@@ -726,13 +761,14 @@ button{
   border: 1px solid #292b2c;
   transition: .4s;
 }
-button:hover{
+
+button:hover {
   border: 1px solid #292b2c;
-    background-color: transparent;
-      color: #292b2c;
+  background-color: transparent;
+  color: #292b2c;
 }
 
-input[type='email']{
+input[type='email'] {
   outline: none;
   border: none;
   padding: 0.8rem 1.5rem;
@@ -740,45 +776,74 @@ input[type='email']{
   border: 1px solid #fff;
   transition: .4s;
 }
-input[type='email']::placeholder{
+
+input[type='email']::placeholder {
   color: #aaa;
   letter-spacing: 1px;
   font-style: italic;
 }
-input[type='email']:focus{
+
+input[type='email']:focus {
   border: 1px solid #000;
 }
-
-
-
 
 /* Media queries */
 /* FHD screen */
 @media (max-width: 600px) {
-  footer{
+  footer {
     flex-direction: column;
   }
 }
-@media (min-width: 1200px) and (max-width: 1400px) {
 
-.ladies-container {
+@media (min-width: 1200px) and (max-width: 1400px) {
+  #wowslider-container1 .ws-title {
+    bottom: 28vh !important;
+  }
+
+  .ladies-container {
     width: 100%;
   }
 }
+
 @media (min-width: 1900px) {
-  .fashion-shop-card{
+  #wowslider-container1 .ws-title {
+    font-size: 4rem !important;
+    left: 2.5em !important;
+  }
+
+  .section-brief {
+    top: 250px;
+  }
+
+  .section-brief p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+    margin-bottom: 1rem;
+  }
+
+  .section-brief button {
+    margin-top: 20vh;
+  }
+
+  .fashion-shop-card {
     height: 450px;
     width: 320px;
   }
-  .ladies-other-grid{
+
+  .ladies-other-grid {
     width: 750px;
   }
-  .for-her-margin{
+
+  .for-her-margin {
     margin-right: 120px;
   }
-  .for-him-margin{
+
+  .for-him-margin {
     margin-left: 120px;
   }
+
   /* .ladies-other-grid > div{
     width: 260px;
     height: 350px;
