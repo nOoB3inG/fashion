@@ -278,8 +278,7 @@ _:-ms-input-placeholder, :root #wowslider-container1 .ws_playpause:after {
   /* margin-right:10em; */
   z-index: 50;
   width: 500px;
-  bottom: 35vh;
-  top: auto;
+  top: 230px;
   opacity: 1;
   text-align: center;
 }

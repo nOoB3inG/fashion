@@ -809,6 +809,7 @@ input[type='email']:focus {
   #wowslider-container1 .ws-title {
     font-size: 4rem !important;
     left: 2.5em !important;
+    top: 30% !important;
   }
 
   .section-brief {
@@ -824,7 +825,7 @@ input[type='email']:focus {
   }
 
   .section-brief button {
-    margin-top: 20vh;
+    margin-top: 12rem;
   }
 
   .fashion-shop-card {
