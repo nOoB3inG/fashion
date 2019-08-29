@@ -272,8 +272,8 @@ _:-ms-input-placeholder, :root #wowslider-container1 .ws_playpause:after {
 #wowslider-container1 .ws-title {
   position: absolute;
   font: bold 3rem 'Kaushan Script', cursive;
-  color: #000;
-/*   text-shadow: 3px 3px 0 #292b2c, 4px 4px 0 royalblue, 5px 5px 2px royalblue; */
+  color: #fff;
+  text-shadow: 3px 3px 0 #292b2c, 4px 4px 0 royalblue, 5px 5px 2px royalblue;
   left: 3em;
   /* margin-right:10em; */
   z-index: 50;
