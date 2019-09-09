@@ -65,7 +65,7 @@
         <section class="section-brief">
           <p>#Missystore</p>
           <h1>Fashion is in my soul.</h1>
-          <button type="button" name="button">EXPLORE NOW</button>
+          <button type="button" name="button" class="explore-btn">EXPLORE NOW</button>
         </section>
 
       </article>
@@ -266,7 +266,7 @@
 
         <div class="ladies-card">
           <div class="card-img product-12" >
-            <ion-icon name="heart-empty" class="favorite-icon"></ion-icon>
+            <ion-icon name="heart-empty" class="favorite-icon" id="favorite-icon"></ion-icon>
             <div class="shop-icon-wrapper">
               <ion-icon name="cart" class="shop-icons"></ion-icon>
               <ion-icon name="search" class="shop-icons"></ion-icon>
@@ -360,16 +360,48 @@
 
     <!-- Javascript -->
     <script type="text/javascript">
-      document.getElementById('menu-btn').addEventListener("click", menuOpen);
-      function menuOpen() {
-        var m = document.getElementById('menu');
-        m.style.display="block";
+      // document.getElementById('menu-btn').addEventListener("click", menuOpen);
+      // function menuOpen() {
+      //   var m = document.getElementById('menu');
+      //   m.style.display="block";
+      // }
+      // document.getElementById('close-btn').addEventListener("click", closeOpen);
+      // function closeOpen() {
+      //   var m = document.getElementById('menu');
+      //   m.style.display="none";
+      // }
+
+      //DOM RELATED
+
+      //No scroll
+      function noScroll() {
+        window.scrollTo(0, 0);
       }
-      document.getElementById('close-btn').addEventListener("click", closeOpen);
-      function closeOpen() {
-        var m = document.getElementById('menu');
-        m.style.display="none";
+      var view = {
+        setEventListener: function(){
+          this.menuWindow();
+        },
+        menuWindow: function(){
+          var menuBtn = document.getElementById('menu-btn');
+          var closeBtn = document.getElementById('close-btn');
+          menuBtn.addEventListener('click',function(){
+            var menuWindow = document.getElementById('menu');;
+            menuWindow.classList.add('menu-fullscreen');
+            window.addEventListener('scroll', noScroll);
+          });
+          closeBtn.addEventListener('click',function() {
+            var menuWindow = document.getElementById('menu');;
+            menuWindow.classList.remove('menu-fullscreen');
+            window.removeEventListener('scroll', noScroll);
+          });
+
+
+        }
       }
+
+      view.setEventListener();
+
+
 
     </script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
